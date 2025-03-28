@@ -6,52 +6,6 @@ import {centeredStyles} from '../Perks/Perks';
 import ToolCard from './ToolCard';
 import gsap from 'gsap';
 
-// Importamos los iconos de react-icons
-// Iconos de Font Awesome
-import { 
-  FaHtml5, 
-  FaCss3Alt, 
-  FaJs, 
-  FaVuejs, 
-  FaReact, 
-  FaAngular, 
-  FaBootstrap, 
-  FaPhp, 
-  FaLaravel, 
-  FaPython, 
-  FaJava, 
-  FaGit, 
-  FaDocker 
-} from 'react-icons/fa';
-
-// Iconos de Simple Icons
-import { 
-  SiSpringboot, 
-  SiMicrosoftsqlserver, 
-  SiPostgresql, 
-  SiMysql, 
-  SiAzuredevops, 
-  SiSwagger, 
-  SiPostman, 
-  SiIonic 
-} from 'react-icons/si';
-
-// Convertimos los iconos de react-icons a URL para que funcionen con el componente ToolCard
-const iconToDataURL = (Icon) => {
-  // Renderizamos el icono a SVG
-  const svgString = ReactDOMServer.renderToStaticMarkup(
-    <Icon style={{ color: 'currentColor' }} />
-  );
-  
-  // Convertimos el SVG a un Data URL
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
-};
-
-// Esta función es solo un placeholder ya que no podemos usar ReactDOMServer en el cliente
-// En su lugar, usaremos rutas públicas a los iconos
-const getIconPath = (iconName) => {
-  return `/icons/${iconName.toLowerCase()}.svg`;
-};
 
 // Datos de las habilidades técnicas de Francisco
 const franciscoTechTools = [
