@@ -49,14 +49,14 @@ const franciscoProjects = [
         description: "Desarrollé un sistema integral para el control de asistencia de estudiantes, proporcionando una herramienta eficiente para la gestión académica con informes personalizados y notificaciones que mejoran la comunicación entre estudiantes y administradores.",
         img: "/img/projects/sams_login.png",
         siteUrl: "http://200.234.228.189/",
-        repoUrl: "#"
+        repoUrl: "https://github.com/Xaviierkasvar/SAMS"
     },
     {
         title: "Website Funsoges",
         description: "Diseñé y desarrollé el sitio web para la Fundación Social Gesarey, enfocándome en una presentación atractiva y funcional con secciones interactivas que permiten a los usuarios conocer los servicios ofrecidos, facilitando el acceso a información clave.",
         img: "/img/projects/funsoges.png",
-        siteUrl: "#",
-        repoUrl: "#"
+        siteUrl: "http://website-funsoges.great-site.net/",
+        repoUrl: "https://github.com/Xaviierkasvar/website-funsoges"
     },
     {
         title: "MGI Frontend",

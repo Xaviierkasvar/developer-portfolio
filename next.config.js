@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
-    swcMinify: false, // Deshabilita la minificación con SWC
+    swcMinify: false,
     images: {
       domains: [
         'open.cruip.com',
@@ -10,7 +10,6 @@ const nextConfig = {
         'images.unsplash.com',
         'res.cloudinary.com'
       ],
-      unoptimized: true
     },
     webpack(config) {
       config.module.rules.push({
