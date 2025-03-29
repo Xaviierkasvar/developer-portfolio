@@ -17,15 +17,15 @@ export const Links = [
         Icon: HomeIcon,
         url: '/'
     }, {
-        text: 'Contact',
+        text: 'Contacto',
         Icon: ConnectWithoutContactIcon,
         url: '/contact'
     }, {
-        text: 'Projects',
+        text: 'Proyectos',
         Icon: AssignmentTurnedInIcon,
         url: '/'
     }, {
-        text: 'Theme',
+        text: 'Tema',
         Icon: DarkModeIcon,
         url: '/',
         isToggleTheme: true
