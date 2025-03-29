@@ -29,8 +29,8 @@ const ReadMore = ({children} : any) => {
             }}
                 onClick={toggleReadMore}>
                 {isReadMore
-                    ? "...read more"
-                    : " show less"}
+                    ? "...Leer más"
+                    : " Ver menos"}
             </span>
         </Typography>
     );

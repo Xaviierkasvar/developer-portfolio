@@ -84,7 +84,7 @@ const ProjectCard = ({
                 }}
               >
                 <Typography fontSize="12px">
-                  Live Site
+                  Visitar sitio
                 </Typography>
               </Button>
             </a>
@@ -101,7 +101,7 @@ const ProjectCard = ({
                 }}
               >
                 <Typography fontSize="12px">
-                  Check Code
+                  Chequear código
                 </Typography>
               </Button>
             </a>

@@ -95,7 +95,7 @@ const About = () => {
                                 sm: '1em'
                             }
                         }}>
-                        Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web, con sólida experiencia como programador Full Stack. Mi experiencia abarca tecnologías de backend y frontend, trabajando con PHP, Laravel, JavaScript, Vue, React y más.
+                        Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web, con sólida experiencia como programador Full Stack. Mi experiencia abarca tecnologías de backend y frontend, trabajando con PHP, Laravel, JavaScript, Vue, React y más. He desplegado arquitecturas de software y he desarrollado aplicaciones web y móviles utilizando React Native. Con experiencia en empresas como Infomedia Service SAS y Fundación Social GESAREY, he liderado proyectos que incluyen sistemas de backoffice, soluciones de gestión de inventario y plataformas de comercio electrónico. Además, manejo metodologías ágiles (Scrum) y herramientas modernas como Azure DevOps, Docker, Git y Postman. Como profesional proactivo, ético y orientado a objetivos, estoy comprometido con la implementación de soluciones innovadoras en el ámbito tecnológico, y constantemente aprendo nuevas tecnologías y mejores prácticas para entregar software de alta calidad que satisfaga las necesidades de los clientes.
                         </Typography>
                     </Box>
                     <Typography
