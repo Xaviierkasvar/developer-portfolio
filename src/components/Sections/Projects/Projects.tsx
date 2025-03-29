@@ -55,7 +55,7 @@ const franciscoProjects = [
         title: "Website Funsoges",
         description: "Diseñé y desarrollé el sitio web para la Fundación Social Gesarey, enfocándome en una presentación atractiva y funcional con secciones interactivas que permiten a los usuarios conocer los servicios ofrecidos, facilitando el acceso a información clave.",
         img: "/img/projects/funsoges.png",
-        siteUrl: "http://website-funsoges.great-site.net/",
+        siteUrl: "https://xaviierkasvar.github.io/website-funsoges/",
         repoUrl: "https://github.com/Xaviierkasvar/website-funsoges"
     },
     {
