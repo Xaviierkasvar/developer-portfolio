@@ -70,9 +70,10 @@ function Footer() {
 
                         <Box sx={styles}>
                             <Typography variant='h3' fontSize='1em'>
-                                Hola, soy Francisco Javier Castillo Barrios, Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web. 
-                                Ofrezco soluciones tecnológicas innovadoras para empresas y particulares, enfocándome en la calidad, 
-                                la eficiencia y la satisfacción del cliente.
+                                Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web/móviles, con experiencia como programador Full Stack y líder técnico. 
+                                Experto en Python (Django, FastAPI), PHP (Laravel), JavaScript/TypeScript (React, React Native, Angular, Vue.js), con dominio de bases de datos 
+                                relacionales (PostgreSQL, MySQL) y NoSQL (MongoDB, Redis). Experiencia en arquitecturas modernas, CI/CD, gestión de equipos y despliegue cloud-native. 
+                                Profesional proactivo con habilidades de liderazgo técnico, mentoría de desarrolladores y orientado a la implementación de soluciones innovadoras y escalables.
                             </Typography>
                         </Box>
 

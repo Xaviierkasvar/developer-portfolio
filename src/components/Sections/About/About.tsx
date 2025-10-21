@@ -119,7 +119,21 @@ const About = () => {
                                 py: '.5em'
                             }}
                         >
-                            Con experiencia en empresas como Infomedia Service SAS y Fundación Social GESAREY, he desarrollado diversos proyectos incluyendo sistemas de backoffice, soluciones de gestión de inventario y plataformas de comercio electrónico.
+                            Recientemente me desempeñé como Ingeniero de Software y Líder de Desarrollo en Pivvot Consulting SAS, donde lideré equipos de desarrollo en proyectos full-stack de alta complejidad, implementando arquitecturas modernas (microservicios, tiempo real), gestionando pipelines CI/CD con Azure DevOps, y desplegando soluciones cloud-native. Dirigí el desarrollo de 4 plataformas principales: QuickGrowth (SaaS con IA - GPT-4), MAPOH (gestión educativa), Flotu (movilidad compartida) y FOM (operaciones de campo).
+                        </Typography>
+
+                        <Typography
+                            variant='h2'
+                            sx={{
+                                maxWidth: '570px',
+                                fontSize: {
+                                    xs: '.8em',
+                                    sm: '1em'
+                                },
+                                textAlign: 'justify',
+                            }}
+                        >
+                            También cuento con experiencia en Infomedia Service SAS y Fundación Social GESAREY, donde desarrollé sistemas de backoffice, soluciones de gestión de inventario y plataformas de comercio electrónico.
                         </Typography>
 
                         <Typography

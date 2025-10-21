@@ -17,6 +17,34 @@ import {IProjects} from "../../../Types/Types";
 // Francisco's projects data
 const franciscoProjects = [
     {
+        title: "QuickGrowth - Plataforma SaaS con IA",
+        description: "Plataforma de consultoría digital empresarial potenciada por GPT-4. Lideré el desarrollo de esta solución que permite evaluar madurez de negocio y generar estrategias comerciales con asistente IA. Arquitectura monorepo de 3 capas con Django 4.x, React Native, MongoDB y CI/CD en Azure DevOps.",
+        img: "/img/projects/quickgrowth.png",
+        siteUrl: "https://play.google.com/store/apps/details?id=com.xaviierkasvar.quickgrowth",
+        repoUrl: "https://apps.apple.com/co/app/quickgrowth/id6748967979"
+    },
+    {
+        title: "MAPOH - Gestión Educativa Integral",
+        description: "Plataforma completa para instituciones educativas con arquitectura de microservicios. Coordiné el desarrollo del backend con FastAPI, app móvil en React Native y panel administrativo en Angular 16. Incluye billetera digital, gestión de pagos y comunicación en tiempo real con PostgreSQL 15.",
+        img: "/img/projects/mapoh.png",
+        siteUrl: "#",
+        repoUrl: "#"
+    },
+    {
+        title: "Flotu App - Movilidad Compartida",
+        description: "Sistema de gestión de flotas de scooters eléctricos con comunicación en tiempo real. Implementé microservicios con Django 5.2, WebSockets, Redis y gateway de WhatsApp Business usando Celery. Arquitectura cloud-native en Azure con procesamiento asíncrono.",
+        img: "/img/projects/flotu.png",
+        siteUrl: "#",
+        repoUrl: "#"
+    },
+    {
+        title: "FOM - Field Operations Management",
+        description: "Sistema de gestión de operaciones de campo para equipos de mantenimiento. Desarrollé la solución con Laravel 10.x y PHP 8.1+, implementando arquitectura MVC, notificaciones multi-canal y dashboard analítico con Chart.js. Docker y Cloudflare Tunnel para despliegue.",
+        img: "/img/projects/fom.png",
+        siteUrl: "https://fom.fcmaquinas.com/",
+        repoUrl: "#"
+    },
+    {
         title: "PCA Parque Caribe Aventura (Backoffice)",
         description: "Desarrollé un robusto backoffice utilizando Laravel 10, optimizando la gestión interna de Caribe Aventura. Este sistema mejora la eficiencia operativa y proporciona una interfaz amigable, facilitando la administración de datos y la generación de informes.",
         img: "/img/projects/pca_login.png",

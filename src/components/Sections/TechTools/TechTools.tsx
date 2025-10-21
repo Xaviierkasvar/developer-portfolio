@@ -28,13 +28,17 @@ const TechTools: React.FC<TechToolsProps> = ({ iconsArray }) => {
     { title: "PHP", svg: "/icons/php.svg" },
     { title: "Laravel", svg: "/icons/laravel.svg" },
     { title: "Python", svg: "/icons/python.svg" },
+    { title: "Django", svg: "/icons/django.svg" },
+    { title: "FastAPI", svg: "/icons/fastapi.svg" },
     { title: "Java", svg: "/icons/java.svg" },
     { title: "Spring Boot", svg: "/icons/spring.svg" },
     { title: "Node.js", svg: "/icons/nodejs.svg" },
     { title: "Express.js", svg: "/icons/express.svg" },
     { title: "SQL Server", svg: "/icons/sqlserver.svg" },
     { title: "PostgreSQL", svg: "/icons/postgresql.svg" },
-    { title: "MySQL", svg: "/icons/mysql.svg" }
+    { title: "MySQL", svg: "/icons/mysql.svg" },
+    { title: "MongoDB", svg: "/icons/mongodb.svg" },
+    { title: "Redis", svg: "/icons/redis.svg" }
   ];
 
   const devopsTools = [

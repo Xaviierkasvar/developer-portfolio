@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Técnico de Proyectos PIVVOT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .project-card {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .project-card h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .project-card h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin: 5px 5px 5px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .description {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            display: block;
+            margin: 40px auto 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+        
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+        
+        .summary {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 2px solid #667eea;
+        }
+        
+        .summary h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            margin-left: 25px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Análisis Técnico PIVVOT</h1>
+            <p>Documentación Completa de Proyectos Tecnológicos</p>
+        </div>
+        
+        <div class="content">
+            <div class="summary">
+                <h2>🎯 Resumen Ejecutivo</h2>
+                <p class="description">
+                    Este documento presenta un análisis técnico detallado de los cuatro proyectos principales desarrollados 
+                    bajo la iniciativa PIVVOT: QuickGrowth, MAPOH, Flotu y FOM. Cada proyecto representa una solución 
+                    tecnológica específica con arquitecturas modernas, escalables y alineadas con las mejores prácticas de desarrollo.
+                </p>
+            </div>
+            
+            <div class="project-card">
+                <h2>1. QuickGrowth</h2>
+                <p class="description">
+                    <strong>Descripción:</strong> Plataforma SaaS de consultoría digital empresarial potenciada por IA. 
+                    Permite evaluar madurez de negocio, identificar oportunidades y crear estrategias comerciales con asistencia 
+                    de GPT-4 que puede ejecutar acciones reales dentro del sistema.
+                </p>
+                
+                <h3>🏗️ Arquitectura</h3>
+                <p class="description">
+                    <strong>Patrón:</strong> Monorepo con arquitectura de tres capas (Routes → Controllers → Services → MongoDB)<br>
+                    <strong>Tipo:</strong> Aplicación Full-Stack integrada con backend Django y frontend React Native
+                </p>
+                
+                <h3>💻 Tecnologías Backend</h3>
+                <span class="tech-tag">Django 4.x</span>
+                <span class="tech-tag">Python 3.10+</span>
+                <span class="tech-tag">Django REST Framework</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">JWT Custom</span>
+                <span class="tech-tag">OpenAI GPT-4</span>
+                
+                <h3>📱 Tecnologías Frontend</h3>
+                <span class="tech-tag">React Native 0.81</span>
+                <span class="tech-tag">Expo SDK 54</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">i18next</span>
+                <span class="tech-tag">Context API</span>
+                <span class="tech-tag">Axios</span>
+                
+                <h3>🚀 DevOps</h3>
+                <span class="tech-tag">Docker Compose</span>
+                <span class="tech-tag">Azure DevOps</span>
+                <span class="tech-tag">CI/CD Pipeline</span>
+                
+                <h3>✨ Características Clave</h3>
+                <ul>
+                    <li>Asistente IA con tool calling y navegación inteligente</li>
+                    <li>Evaluación automatizada de madurez empresarial</li>
+                    <li>Generación de estrategias comerciales personalizadas</li>
+                    <li>Interfaz bilingüe (español/inglés)</li>
+                    <li>Sistema de autenticación JWT personalizado</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <h2>2. MAPOH</h2>
+                <p class="description">
+                    <strong>Descripción:</strong> Plataforma integral de gestión educativa para instituciones académicas. 
+                    Administra programas, inscripciones, pagos, documentación y servicios complementarios con enfoque multirol 
+                    (administradores, tutores, estudiantes).
+                </p>
+                
+                <h3>🏗️ Arquitectura</h3>
+                <p class="description">
+                    <strong>Patrón:</strong> Microservicios desacoplados<br>
+                    <strong>Componentes:</strong> Backend API + App Móvil + Panel Administrativo Web
+                </p>
+                
+                <h3>💻 Tecnologías Backend</h3>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Python 3.x</span>
+                <span class="tech-tag">SQLAlchemy</span>
+                <span class="tech-tag">Alembic</span>
+                <span class="tech-tag">PostgreSQL 15</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">bcrypt</span>
+                
+                <h3>📱 App Móvil</h3>
+                <span class="tech-tag">React Native 0.79</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">React Navigation</span>
+                <span class="tech-tag">AsyncStorage</span>
+                
+                <h3>🖥️ Panel Administrativo</h3>
+                <span class="tech-tag">Angular 16</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">RxJS</span>
+                <span class="tech-tag">TypeScript</span>
+                
+                <h3>🚀 DevOps</h3>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Azure DevOps Pipelines</span>
+                
+                <h3>✨ Características Clave</h3>
+                <ul>
+                    <li>Gestión completa del ciclo educativo</li>
+                    <li>Billetera digital integrada</li>
+                    <li>Sistema de financiamiento y pagos</li>
+                    <li>Comunicación padres-institución en tiempo real</li>
+                    <li>Dashboard con métricas y reportes analíticos</li>
+                    <li>Gestión documental automatizada</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <h2>3. Flotu App</h2>
+                <p class="description">
+                    <strong>Descripción:</strong> Solución para gestión de servicios de movilidad compartida (scooters eléctricos). 
+                    Integra control de flotas, gestión de usuarios, procesamiento de pagos, sistema de reservas y comunicación 
+                    automatizada vía WhatsApp Business.
+                </p>
+                
+                <h3>🏗️ Arquitectura</h3>
+                <p class="description">
+                    <strong>Patrón:</strong> Microservicios con comunicación en tiempo real<br>
+                    <strong>Infraestructura:</strong> Azure Cloud Native
+                </p>
+                
+                <h3>💻 Tecnologías Backend</h3>
+                <span class="tech-tag">Django 5.2</span>
+                <span class="tech-tag">Django REST Framework</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Django Channels</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">WebSockets</span>
+                
+                <h3>📱 Gateway WhatsApp</h3>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Celery</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Kombu</span>
+                
+                <h3>📱 App Móvil</h3>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">i18next</span>
+                <span class="tech-tag">Axios</span>
+                
+                <h3>🚀 DevOps</h3>
+                <span class="tech-tag">Docker Compose</span>
+                <span class="tech-tag">Azure DevOps</span>
+                
+                <h3>✨ Características Clave</h3>
+                <ul>
+                    <li>Gestión de flotas en tiempo real</li>
+                    <li>Mensajería automatizada vía WhatsApp Business</li>
+                    <li>Sistema de pagos integrado</li>
+                    <li>Reservas y tracking de vehículos</li>
+                    <li>Notificaciones push instantáneas</li>
+                    <li>Interfaz bilingüe (español/inglés)</li>
+                    <li>Procesamiento asíncrono de tareas con Celery</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <h2>4. FOM (Field Operations Management)</h2>
+                <p class="description">
+                    <strong>Descripción:</strong> Sistema de gestión de operaciones de campo para coordinar equipos de mantenimiento. 
+                    Permite asignar tareas, monitorear desempeño de técnicos y centralizar información de clientes, máquinas y 
+                    operaciones en una plataforma unificada.
+                </p>
+                
+                <h3>🏗️ Arquitectura</h3>
+                <p class="description">
+                    <strong>Patrón:</strong> MVC (Model-View-Controller)<br>
+                    <strong>Framework:</strong> Laravel 10.x sobre PHP 8.1+
+                </p>
+                
+                <h3>💻 Tecnologías Backend</h3>
+                <span class="tech-tag">Laravel 10.x</span>
+                <span class="tech-tag">PHP 8.1+</span>
+                <span class="tech-tag">Eloquent ORM</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Laravel Sanctum</span>
+                <span class="tech-tag">bcrypt</span>
+                
+                <h3>🖥️ Frontend</h3>
+                <span class="tech-tag">Blade Templates</span>
+                <span class="tech-tag">Bootstrap 5.3</span>
+                <span class="tech-tag">jQuery</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Vite</span>
+                
+                <h3>🚀 Infraestructura</h3>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Cloudflare Tunnel</span>
+                
+                <h3>📧 Servicios</h3>
+                <span class="tech-tag">EmailJS</span>
+                <span class="tech-tag">MailerSend</span>
+                <span class="tech-tag">ICS Calendar</span>
+                
+                <h3>✨ Características Clave</h3>
+                <ul>
+                    <li>Coordinación de equipos técnicos en campo</li>
+                    <li>Asignación inteligente de tareas por rol y ubicación</li>
+                    <li>Notificaciones automáticas multi-canal</li>
+                    <li>Dashboard analítico con Chart.js</li>
+                    <li>Gestión de clientes y máquinas</li>
+                    <li>Generación de eventos de calendario (ICS)</li>
+                    <li>Trazabilidad completa de operaciones</li>
+                </ul>
+            </div>
+            
+            <div class="summary">
+                <h2>📊 Comparativa Tecnológica</h2>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                    <thead>
+                        <tr style="background: #667eea; color: white;">
+                            <th style="padding: 12px; text-align: left;">Proyecto</th>
+                            <th style="padding: 12px; text-align: left;">Arquitectura</th>
+                            <th style="padding: 12px; text-align: left;">Backend</th>
+                            <th style="padding: 12px; text-align: left;">Base de Datos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #f8f9fa;">
+                            <td style="padding: 12px;"><strong>QuickGrowth</strong></td>
+                            <td style="padding: 12px;">Monorepo 3 capas</td>
+                            <td style="padding: 12px;">Django + MongoDB</td>
+                            <td style="padding: 12px;">MongoDB</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px;"><strong>MAPOH</strong></td>
+                            <td style="padding: 12px;">Microservicios</td>
+                            <td style="padding: 12px;">FastAPI + PostgreSQL</td>
+                            <td style="padding: 12px;">PostgreSQL 15</td>
+                        </tr>
+                        <tr style="background: #f8f9fa;">
+                            <td style="padding: 12px;"><strong>Flotu</strong></td>
+                            <td style="padding: 12px;">Microservicios RT</td>
+                            <td style="padding: 12px;">Django + Redis</td>
+                            <td style="padding: 12px;">PostgreSQL + Redis</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px;"><strong>FOM</strong></td>
+                            <td style="padding: 12px;">MVC</td>
+                            <td style="padding: 12px;">Laravel 10 (PHP)</td>
+                            <td style="padding: 12px;">PostgreSQL / MySQL</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 25px; color: #667eea;">🎯 Conclusión</h3>
+                <p class="description" style="margin-top: 10px;">
+                    Los proyectos de PIVVOT demuestran una madurez tecnológica sólida con arquitecturas modernas, 
+                    prácticas DevOps consolidadas y orientación hacia la escalabilidad. Cada solución aborda necesidades 
+                    específicas (consultoría, educación, movilidad, operaciones de campo) con tecnologías apropiadas 
+                    y diseños consistentes alineados con la innovación.
+                </p>
+            </div>
+            
+            <button class="download-btn" onclick="generatePDF()">
+                📥 Descargar PDF Completo
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            let yPos = 20;
+            const margin = 20;
+            const pageWidth = doc.internal.pageSize.width;
+            const maxWidth = pageWidth - (2 * margin);
+            
+            // Portada
+            doc.setFillColor(102, 126, 234);
+            doc.rect(0, 0, pageWidth, 60, 'F');
+            doc.setTextColor(255, 255, 255);
+            doc.setFontSize(24);
+            doc.text('Análisis Técnico PIVVOT', pageWidth / 2, 30, { align: 'center' });
+            doc.setFontSize(12);
+            doc.text('Documentación Completa de Proyectos Tecnológicos', pageWidth / 2, 45, { align: 'center' });
+            
+            yPos = 80;
+            doc.setTextColor(0, 0, 0);
+            
+            // Resumen Ejecutivo
+            doc.setFontSize(16);
+            doc.setTextColor(102, 126, 234);
+            doc.text('Resumen Ejecutivo', margin, yPos);
+            yPos += 10;
+            
+            doc.setFontSize(10);
+            doc.setTextColor(85, 85, 85);
+            const summary = 'Este documento presenta un análisis técnico detallado de los cuatro proyectos principales desarrollados bajo la iniciativa PIVVOT: QuickGrowth, MAPOH, Flotu y FOM. Cada proyecto representa una solución tecnológica específica con arquitecturas modernas, escalables y alineadas con las mejores prácticas de desarrollo.';
+            const splitSummary = doc.splitTextToSize(summary, maxWidth);
+            doc.text(splitSummary, margin, yPos);
+            yPos += splitSummary.length * 6 + 15;
+            
+            // QuickGrowth
+            doc.addPage();
+            yPos = 20;
+            doc.setFontSize(18);
+            doc.setTextColor(102, 126, 234);
+            doc.text('1. QuickGrowth', margin, yPos);
+            yPos += 10;
+            
+            doc.setFontSize(10);
+            doc.setTextColor(0, 0, 0);
+            doc.text('Descripción:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            const qg1 = 'Plataforma SaaS de consultoría digital empresarial potenciada por IA. Permite evaluar madurez de negocio, identificar oportunidades y crear estrategias comerciales con asistencia de GPT-4.';
+            const splitQG1 = doc.splitTextToSize(qg1, maxWidth);
+            doc.text(splitQG1, margin, yPos);
+            yPos += splitQG1.length * 6 + 8;
+            
+            doc.setFontSize(12);
+            doc.setTextColor(118, 75, 162);
+            doc.text('Arquitectura', margin, yPos);
+            yPos += 6;
+            doc.setFontSize(10);
+            doc.setTextColor(85, 85, 85);
+            doc.text('Patrón: Monorepo con arquitectura de tres capas (Routes → Controllers → Services → MongoDB)', margin, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Tecnologías Backend:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            doc.text('• Django 4.x, Python 3.10+, Django REST Framework, MongoDB, JWT Custom, OpenAI GPT-4', margin + 5, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Tecnologías Frontend:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            doc.text('• React Native 0.81, Expo SDK 54, TypeScript, i18next, Context API, Axios', margin + 5, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('DevOps:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            doc.text('• Docker Compose, Azure DevOps, CI/CD Pipeline', margin + 5, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Características Clave:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            const features1 = [
+                'Asistente IA con tool calling y navegación inteligente',
+                'Evaluación automatizada de madurez empresarial',
+                'Generación de estrategias comerciales personalizadas',
+                'Interfaz bilingüe (español/inglés)',
+                'Sistema de autenticación JWT personalizado'
+            ];
+            features1.forEach(f => {
+                doc.text('• ' + f, margin + 5, yPos);
+                yPos += 6;
+            });
+            
+            // MAPOH
+            doc.addPage();
+            yPos = 20;
+            doc.setFontSize(18);
+            doc.setTextColor(102, 126, 234);
+            doc.text('2. MAPOH', margin, yPos);
+            yPos += 10;
+            
+            doc.setFontSize(10);
+            doc.setTextColor(0, 0, 0);
+            doc.text('Descripción:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            const mapoh1 = 'Plataforma integral de gestión educativa para instituciones académicas. Administra programas, inscripciones, pagos, documentación y servicios complementarios con enfoque multirol.';
+            const splitMapoh1 = doc.splitTextToSize(mapoh1, maxWidth);
+            doc.text(splitMapoh1, margin, yPos);
+            yPos += splitMapoh1.length * 6 + 8;
+            
+            doc.setFontSize(12);
+            doc.setTextColor(118, 75, 162);
+            doc.text('Arquitectura', margin, yPos);
+            yPos += 6;
+            doc.setFontSize(10);
+            doc.setTextColor(85, 85, 85);
+            doc.text('Patrón: Microservicios desacoplados (Backend API + App Móvil + Panel Administrativo Web)', margin, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Tecnologías Backend:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            doc.text('• FastAPI, Python 3.x, SQLAlchemy, Alembic, PostgreSQL 15, JWT, bcrypt', margin + 5, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('App Móvil:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            doc.text('• React Native 0.79, Expo, TypeScript, React Navigation, AsyncStorage', margin + 5, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Panel Administrativo:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            doc.text('• Angular 16, Bootstrap 5, RxJS, TypeScript', margin + 5, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Características Clave:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            const features2 = [
+                'Gestión completa del ciclo educativo',
+                'Billetera digital integrada',
+                'Sistema de financiamiento y pagos',
+                'Comunicación padres-institución en tiempo real',
+                'Dashboard con métricas y reportes analíticos',
+                'Gestión documental automatizada'
+            ];
+            features2.forEach(f => {
+                doc.text('• ' + f, margin + 5, yPos);
+                yPos += 6;
+            });
+            
+            // Flotu
+            doc.addPage();
+            yPos = 20;
+            doc.setFontSize(18);
+            doc.setTextColor(102, 126, 234);
+            doc.text('3. Flotu App', margin, yPos);
+            yPos += 10;
+            
+            doc.setFontSize(10);
+            doc.setTextColor(0, 0, 0);
+            doc.text('Descripción:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            const flotu1 = 'Solución para gestión de servicios de movilidad compartida (scooters eléctricos). Integra control de flotas, gestión de usuarios, procesamiento de pagos y comunicación vía WhatsApp Business.';
+            const splitFlotu1 = doc.splitTextToSize(flotu1, maxWidth);
+            doc.text(splitFlotu1, margin, yPos);
+            yPos += splitFlotu1.length * 6 + 8;
+            
+            doc.setFontSize(12);
+            doc.setTextColor(118, 75, 162);
+            doc.text('Arquitectura', margin, yPos);
+            yPos += 6;
+            doc.setFontSize(10);
+            doc.setTextColor(85, 85, 85);
+            doc.text('Patrón: Microservicios con comunicación en tiempo real (Azure Cloud Native)', margin, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Tecnologías Backend:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85);
+            doc.text('• Django 5.2, Django REST Framework, PostgreSQL, JWT, Django Channels, Redis, WebSockets', margin + 5, yPos);
+            yPos += 10;
+            
+            doc.setTextColor(0, 0, 0);
+            doc.text('Gateway WhatsApp:', margin, yPos);
+            yPos += 6;
+            doc.setTextColor(85, 85, 85
