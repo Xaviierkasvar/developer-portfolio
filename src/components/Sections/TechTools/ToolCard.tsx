@@ -58,6 +58,18 @@ const franciscoTechTools = [
     isBackend: false,
     filter: false
   },
+  { 
+    title: "Next.js", 
+    svg: "/icons/nextjs.svg", 
+    isBackend: false,
+    filter: false
+  },
+  { 
+    title: "React Native", 
+    svg: "/icons/reactnative.svg", 
+    isBackend: false,
+    filter: false
+  },
   
   // Herramientas Backend y otras
   { 
@@ -75,6 +87,30 @@ const franciscoTechTools = [
   { 
     title: "Python", 
     svg: "/icons/python.svg", 
+    isBackend: true,
+    filter: false
+  },
+  { 
+    title: "Django", 
+    svg: "/icons/django.svg", 
+    isBackend: true,
+    filter: false
+  },
+  { 
+    title: "FastAPI", 
+    svg: "/icons/fastapi.svg", 
+    isBackend: true,
+    filter: false
+  },
+  { 
+    title: "Node.js", 
+    svg: "/icons/nodejs.svg", 
+    isBackend: true,
+    filter: false
+  },
+  { 
+    title: "Express.js", 
+    svg: "/icons/express.svg", 
     isBackend: true,
     filter: false
   },
@@ -109,7 +145,27 @@ const franciscoTechTools = [
     filter: false
   },
   { 
-    title: "Azure DevOps", 
+    title: "MongoDB", 
+    svg: "/icons/mongodb.svg", 
+    isBackend: true,
+    filter: false
+  },
+  { 
+    title: "Redis", 
+    svg: "/icons/redis.svg", 
+    isBackend: true,
+    filter: false
+  },
+  
+  // DevOps & Cloud
+  { 
+    title: "AWS", 
+    svg: "/icons/aws.svg", 
+    isBackend: true,
+    filter: false
+  },
+  { 
+    title: "Azure", 
     svg: "/icons/azure.svg", 
     isBackend: true,
     filter: false
@@ -123,6 +179,12 @@ const franciscoTechTools = [
   { 
     title: "Docker", 
     svg: "/icons/docker.svg", 
+    isBackend: true,
+    filter: false
+  },
+  { 
+    title: "Nginx", 
+    svg: "/icons/nginx.svg", 
     isBackend: true,
     filter: false
   },
@@ -245,7 +307,7 @@ const TechTools = ({iconsArray = franciscoTechTools} : any) => {
                         sm: '1em'
                     }
                 }}>
-                    Tecnologías de Backend y herramientas
+                    Backend, DevOps y Cloud
                 </Typography>
 
             </Grid>

@@ -30,9 +30,9 @@ const perksArray = [
         text: 'Desarrollo completo de aplicaciones web usando tecnologías modernas como PHP, Laravel, Vue.js, HTML, CSS y más. Enfoque en soluciones eficientes y interfaces amigables para el usuario.',
     },
     {
-        title: 'Soporte y Mantenimiento',
+        title: 'DevOps & Cloud Architecture',
         Icon: BuildIcon,
-        text: 'Servicios de soporte técnico, mantenimiento preventivo y correctivo de sistemas de información, incluyendo administración de bases de datos y servidores para garantizar el óptimo funcionamiento.',
+        text: 'Implementación de infraestructura cloud-native en AWS y Azure, automatización de pipelines CI/CD, gestión de contenedores Docker, monitoreo de aplicaciones y optimización de procesos DevOps para despliegues ágiles y escalables.',
     },
     {
         title: 'Integración de APIs',
