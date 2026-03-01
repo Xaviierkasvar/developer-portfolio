@@ -104,7 +104,7 @@ const About = () => {
                                 textAlign: 'justify',
                             }}
                         >
-                            Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web, con sólida experiencia como programador Full Stack. Mi experiencia abarca tecnologías de backend y frontend, trabajando con PHP, Laravel, JavaScript, Vue, React y más. He desplegado arquitecturas de software y he desarrollado aplicaciones web y móviles utilizando React Native.
+                            Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web, con sólida experiencia como DevOps Engineer y programador Full Stack. Mi experiencia abarca tecnologías de backend como Python (Django, FastAPI), PHP (Laravel), Java (Spring Boot), Node.js (Express.js), y frontend con JavaScript/TypeScript (React, React Native, Angular, Vue.js, Next.js). He desplegado arquitecturas cloud-native en AWS y Azure, implementando soluciones escalables con Docker, CI/CD y bases de datos relacionales y NoSQL.
                         </Typography>
 
                         <Typography
@@ -119,7 +119,7 @@ const About = () => {
                                 py: '.5em'
                             }}
                         >
-                            Recientemente me desempeñé como Ingeniero de Software y Líder de Desarrollo en Pivvot Consulting SAS, donde lideré equipos de desarrollo en proyectos full-stack de alta complejidad, implementando arquitecturas modernas (microservicios, tiempo real), gestionando pipelines CI/CD con Azure DevOps, y desplegando soluciones cloud-native. Dirigí el desarrollo de 4 plataformas principales: QuickGrowth (SaaS con IA - GPT-4), MAPOH (gestión educativa), Flotu (movilidad compartida) y FOM (operaciones de campo).
+                            Recientemente me desempeñé como Líder Técnico Full Stack & DevOps Architect en Pivvot Consulting SAS, donde lideré equipos de desarrollo en proyectos full-stack de alta complejidad, implementando arquitecturas modernas (microservicios, tiempo real), gestionando pipelines CI/CD con Azure DevOps, y desplegando soluciones cloud-native. Dirigí el desarrollo de 4 plataformas principales: QuickGrowth (SaaS con IA - GPT-4), MAPOH (gestión educativa), Flotu (movilidad compartida) y FOM (operaciones de campo).
                         </Typography>
 
                         <Typography
@@ -133,7 +133,7 @@ const About = () => {
                                 textAlign: 'justify',
                             }}
                         >
-                            También cuento con experiencia en Infomedia Service SAS y Fundación Social GESAREY, donde desarrollé sistemas de backoffice, soluciones de gestión de inventario y plataformas de comercio electrónico.
+                            También cuento con experiencia como Ingeniero de I&D y DevOps Engineer en Infomedia Service SAS, implementando prácticas DevOps con Docker, Azure DevOps, y desarrollando con múltiples tecnologías. Además, trabajé en Fundación Social GESAREY desarrollando sistemas de gestión, backoffice y plataformas de comercio electrónico.
                         </Typography>
 
                         <Typography

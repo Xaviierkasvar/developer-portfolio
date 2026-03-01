@@ -21,7 +21,7 @@ const Home : NextPage = ({projectsArray, iconsArray} : any) => {
 
     }, [])
     return (
-        <Layout desc={`Francisco Javier Castillo Barrios, Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web, con experiencia como programador Full Stack.`} title='Francisco Javier Castillo Barrios | Ingeniero de Sistemas y Desarrollador Full Stack'>
+        <Layout desc={`Francisco Javier Castillo Barrios, DevOps Engineer e Ingeniero de Sistemas especializado en desarrollo Full Stack, arquitectura cloud-native AWS/Azure y automatización CI/CD.`} title='Francisco Javier Castillo Barrios | DevOps Engineer & Desarrollador Full Stack'>
 
             <Box
                 sx={{

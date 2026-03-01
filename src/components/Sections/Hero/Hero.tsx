@@ -71,7 +71,7 @@ const Hero = () => {
                             maxWidth: '570px',
                             fontWeight: '300'
                         }}>
-                           Hola, soy Francisco Javier Castillo Barrios. Ingeniero de Sistemas especializado en desarrollo de software y aplicaciones web/móviles, con sólida experiencia como programador Full Stack y líder técnico. Experto en Python (Django, FastAPI), PHP (Laravel), JavaScript/TypeScript (React, React Native, Angular, Vue.js), con dominio de bases de datos relacionales y NoSQL. Experiencia comprobada en arquitecturas modernas, CI/CD, gestión de equipos y despliegue de soluciones cloud-native.
+                           Hola, soy Francisco Javier Castillo Barrios. DevOps Engineer e Ingeniero de Sistemas especializado en desarrollo Full Stack y arquitectura cloud-native. Experto en AWS, Azure, automatización CI/CD, Docker y gestión de infraestructuras en la nube. Amplia experiencia en Python (Django, FastAPI), PHP (Laravel), JavaScript/TypeScript (React, React Native, Angular, Vue.js, Next.js), con dominio de bases de datos relacionales y NoSQL. Especialista en liderazgo técnico, arquitecturas modernas y despliegue de soluciones escalables.
                         </Typography>
 
                         <Box
